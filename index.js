@@ -23,7 +23,7 @@ var timeShout = function(){
 var client = require("twilio")(accountSid, authToken);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(multer());
+// app.use(multer());
 
 app.set('views', './views');
 app.set('view engine', 'jade');

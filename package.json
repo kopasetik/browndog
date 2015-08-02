@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/kopasetik/browndog",
   "dependencies": {
+    "body-parser": "^1.13.3",
     "express": "^4.12.3",
     "jade": "^1.9.2",
-    "twilio": "^2.0.0"
+    "multer": "^1.0.1",
+    "twilio": "^2.2.1"
   }
 }
