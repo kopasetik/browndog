@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title Brown Dog
+        script(
+            type="text/javascript",
+            src="//static.twilio.com/libs/twiliojs/1.2/twilio.min.js")
+    body
+        h1 This is the brown dog.
+        form(action="/form", method="post")
+            .form-name    
+                label(for="name") Name
+                input(type="text", id="name", value="Enter your name", name="name")
+            .form-phone    
+                label(for="phone") Phone
+                input(type="tel", id="phone", name="phone")
+            .form-msg    
+                label(for="msg") Message
+                textarea(id="msg", rows="5", name="msg") Just some filler text
+            .form-button
+                button(type="submit") Send that message!
