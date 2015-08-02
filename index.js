@@ -1,6 +1,4 @@
 var
-    accountSid = process.env.TWILIO_ACCOUNT_SID,
-    authToken = process.env.TWILIO_AUTH_TOKEN,
     http = require("http"),
     fs = require("fs"),
     path = require("path"),
@@ -9,7 +7,9 @@ var
     multer = require("multer"),
     buzzerNumbers = require("./buzzerNumbers.js");
 
-var passcode = buzzerNumbers.configCode;
+var accountSid = buzzerNumbers.TWILIO_ACCOUNT_SID,
+    authToken = buzzerNumbers.TWILIO_AUTH_TOKEN,
+    passcode = buzzerNumbers.configCode;
 
 var app = express();
 var server = http.createServer(app);
